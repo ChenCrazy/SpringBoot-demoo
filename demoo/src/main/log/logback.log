@@ -1,0 +1,901 @@
+2018-05-12 20:15:27.480  INFO 3304 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on 麦克白 with PID 3304 (C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo\target\classes started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 20:15:27.484 DEBUG 3304 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 20:15:27.486  INFO 3304 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2018-05-12 20:15:27.656  INFO 3304 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76908cc0: startup date [Sat May 12 20:15:27 CST 2018]; root of context hierarchy
+2018-05-12 20:15:29.355  INFO 3304 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e328e661] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 20:15:29.660  INFO 3304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2018-05-12 20:15:29.682  INFO 3304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-12 20:15:29.682  INFO 3304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-12 20:15:29.687  INFO 3304 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2018-05-12 20:15:29.688  INFO 3304 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-05-12 20:15:29.688  INFO 3304 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-05-12 20:15:30.743  INFO 3304 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2018-05-12 20:15:30.844  INFO 3304 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-12 20:15:30.844  INFO 3304 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3189 ms
+2018-05-12 20:15:30.967  INFO 3304 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-12 20:15:30.972  INFO 3304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-12 20:15:30.973  INFO 3304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-12 20:15:30.973  INFO 3304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-12 20:15:30.973  INFO 3304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-12 20:15:31.109  INFO 3304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 20:15:31.271  INFO 3304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 20:15:31.312  INFO 3304 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 20:15:31.324  INFO 3304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 20:15:31.510  INFO 3304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 20:15:31.513  INFO 3304 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 20:15:31.548  INFO 3304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 20:15:31.646  INFO 3304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 20:15:32.036  INFO 3304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 20:15:32.456  INFO 3304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 20:15:32.922  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76908cc0: startup date [Sat May 12 20:15:27 CST 2018]; root of context hierarchy
+2018-05-12 20:15:32.969  WARN 3304 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 20:15:33.045  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 20:15:33.047  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 20:15:33.048  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 20:15:33.050  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 20:15:33.054  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 20:15:33.055  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 20:15:33.056  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 20:15:33.056  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 20:15:33.056  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 20:15:33.057  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 20:15:33.058  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 20:15:33.058  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 20:15:33.060  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 20:15:33.060  INFO 3304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 20:15:33.091  INFO 3304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 20:15:33.091  INFO 3304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 20:15:33.191  INFO 3304 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 20:15:33.385  INFO 3304 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-12 20:15:33.386  INFO 3304 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-12 20:15:33.391  INFO 3304 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-12 20:15:33.428  INFO 3304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2018-05-12 20:15:33.431  INFO 3304 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.505 seconds (JVM running for 7.549)
+2018-05-12 20:15:45.976  INFO 3304 --- [http-nio-8100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-12 20:15:45.977  INFO 3304 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-12 20:15:45.995  INFO 3304 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-05-12 20:15:46.063  INFO 3304 --- [http-nio-8100-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-12 20:58:20.652  INFO 8188 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 8188 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 20:58:20.655 DEBUG 8188 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 20:58:20.658  INFO 8188 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 20:58:20.716  INFO 8188 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 20:58:20 CST 2018]; root of context hierarchy
+2018-05-12 20:58:22.976  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58b69901] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 20:58:23.333  INFO 8188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 20:58:23.629  INFO 8188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 20:58:23.832  INFO 8188 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 20:58:23.856  INFO 8188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 20:58:23.950  INFO 8188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 20:58:23.952  INFO 8188 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 20:58:24.005  INFO 8188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 20:58:24.187  INFO 8188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 20:58:25.107  INFO 8188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 20:58:26.340  INFO 8188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 20:58:26.905  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 20:58:20 CST 2018]; root of context hierarchy
+2018-05-12 20:58:26.998  WARN 8188 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 20:58:27.068  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 20:58:27.071  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 20:58:27.072  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 20:58:27.077  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 20:58:27.085  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 20:58:27.086  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 20:58:27.086  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 20:58:27.088  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 20:58:27.089  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 20:58:27.089  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 20:58:27.091  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 20:58:27.092  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 20:58:27.097  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 20:58:27.099  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 20:58:27.171  INFO 8188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 20:58:27.174  INFO 8188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 20:58:27.430  INFO 8188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 20:58:27.980  INFO 8188 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 8.527 seconds (JVM running for 11.509)
+2018-05-12 20:58:41.383  INFO 8188 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 20:58:20 CST 2018]; root of context hierarchy
+2018-05-12 20:58:41.390  INFO 8188 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 20:58:41.391  INFO 8188 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 20:58:41.402  INFO 8188 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:02:26.305  INFO 972 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 972 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:02:26.310 DEBUG 972 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:02:26.313  INFO 972 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:02:26.438  INFO 972 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:02:26 CST 2018]; root of context hierarchy
+2018-05-12 21:02:29.535  INFO 972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12d1935a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:02:29.901  INFO 972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:02:30.150  INFO 972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:02:30.381  INFO 972 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:02:30.405  INFO 972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:02:30.528  INFO 972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:02:30.530  INFO 972 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:02:30.592  INFO 972 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:02:30.787  INFO 972 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:02:31.941  INFO 972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:02:33.070  INFO 972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:02:33.553  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:02:26 CST 2018]; root of context hierarchy
+2018-05-12 21:02:33.634  WARN 972 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:02:33.702  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:02:33.704  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:02:33.705  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:02:33.712  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:02:33.726  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:02:33.727  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:02:33.727  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:02:33.729  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:02:33.730  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:02:33.730  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:02:33.731  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:02:33.731  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:02:33.735  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:02:33.736  INFO 972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:02:33.814  INFO 972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:02:33.816  INFO 972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:02:34.061  INFO 972 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:02:34.504  INFO 972 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 9.278 seconds (JVM running for 11.458)
+2018-05-12 21:02:47.175  INFO 972 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:02:26 CST 2018]; root of context hierarchy
+2018-05-12 21:02:47.192  INFO 972 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:02:47.193  INFO 972 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:02:47.204  INFO 972 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:06:34.803  INFO 10040 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 10040 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:06:34.805 DEBUG 10040 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:06:34.809  INFO 10040 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:06:34.930  INFO 10040 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@631e06ab: startup date [Sat May 12 21:06:34 CST 2018]; root of context hierarchy
+2018-05-12 21:06:37.667  INFO 10040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db7dfd6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:06:38.069  INFO 10040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:06:38.456  INFO 10040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:06:38.521  INFO 10040 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:06:38.541  INFO 10040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:06:38.671  INFO 10040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:06:38.675  INFO 10040 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:06:38.740  INFO 10040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:06:38.969  INFO 10040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:06:39.993  INFO 10040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:06:41.311  INFO 10040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:06:41.953  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@631e06ab: startup date [Sat May 12 21:06:34 CST 2018]; root of context hierarchy
+2018-05-12 21:06:42.062  WARN 10040 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:06:42.152  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:06:42.155  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:06:42.156  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:06:42.165  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:06:42.175  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:06:42.176  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:06:42.176  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:06:42.178  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:06:42.178  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:06:42.178  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:06:42.179  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:06:42.180  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:06:42.183  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:06:42.185  INFO 10040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:06:42.236  INFO 10040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:06:42.237  INFO 10040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:06:42.532  INFO 10040 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:06:43.101  INFO 10040 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 9.482 seconds (JVM running for 12.322)
+2018-05-12 21:06:56.611  INFO 10040 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@631e06ab: startup date [Sat May 12 21:06:34 CST 2018]; root of context hierarchy
+2018-05-12 21:06:56.616  INFO 10040 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:06:56.617  INFO 10040 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:06:56.626  INFO 10040 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:07:52.597  INFO 1072 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 1072 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:07:52.603 DEBUG 1072 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:07:52.608  INFO 1072 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:07:52.741  INFO 1072 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:07:52 CST 2018]; root of context hierarchy
+2018-05-12 21:07:55.965  INFO 1072 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ed41243e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:07:56.315  INFO 1072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:07:56.578  INFO 1072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:07:56.749  INFO 1072 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:07:56.770  INFO 1072 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:07:56.864  INFO 1072 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:07:56.866  INFO 1072 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:07:56.913  INFO 1072 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:07:57.082  INFO 1072 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:07:57.874  INFO 1072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:07:58.893  INFO 1072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:07:59.428  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:07:52 CST 2018]; root of context hierarchy
+2018-05-12 21:07:59.522  WARN 1072 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:07:59.603  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:07:59.606  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:07:59.607  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:07:59.611  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:07:59.621  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:07:59.623  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:07:59.624  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:07:59.627  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:07:59.627  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:07:59.628  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:07:59.628  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:07:59.629  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:07:59.634  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:07:59.637  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:07:59.701  INFO 1072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:07:59.702  INFO 1072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:07:59.915  INFO 1072 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:08:00.349  INFO 1072 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 8.805 seconds (JVM running for 11.038)
+2018-05-12 21:08:13.219  INFO 1072 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:07:52 CST 2018]; root of context hierarchy
+2018-05-12 21:08:13.226  INFO 1072 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:08:13.227  INFO 1072 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:08:13.240  INFO 1072 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:10:14.089  INFO 9848 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 9848 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:10:14.092 DEBUG 9848 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:10:14.095  INFO 9848 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:10:14.214  INFO 9848 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@18f20260: startup date [Sat May 12 21:10:14 CST 2018]; root of context hierarchy
+2018-05-12 21:10:17.583  INFO 9848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46382a28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:10:17.969  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:10:18.370  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:10:18.426  INFO 9848 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:10:18.446  INFO 9848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:10:18.591  INFO 9848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:10:18.593  INFO 9848 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:10:18.660  INFO 9848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:10:18.909  INFO 9848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:10:20.068  INFO 9848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:10:21.488  INFO 9848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:10:22.155  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@18f20260: startup date [Sat May 12 21:10:14 CST 2018]; root of context hierarchy
+2018-05-12 21:10:22.264  WARN 9848 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:10:22.355  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:10:22.359  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:10:22.359  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:10:22.370  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:10:22.381  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:10:22.382  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:10:22.383  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:10:22.388  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:10:22.389  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:10:22.389  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:10:22.390  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:10:22.390  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:10:22.395  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:10:22.397  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:10:22.475  INFO 9848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:10:22.477  INFO 9848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:10:22.829  INFO 9848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:10:23.410  INFO 9848 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 10.468 seconds (JVM running for 13.199)
+2018-05-12 21:12:13.620  WARN 9848 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s12ms321µs989ns).
+2018-05-12 21:13:11.560  INFO 9848 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@18f20260: startup date [Sat May 12 21:10:14 CST 2018]; root of context hierarchy
+2018-05-12 21:13:11.564  INFO 9848 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:13:11.566  INFO 9848 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:13:11.577  INFO 9848 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:13:32.108  INFO 2148 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 2148 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:13:32.112 DEBUG 2148 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:13:32.118  INFO 2148 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:13:32.242  INFO 2148 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7383eae2: startup date [Sat May 12 21:13:32 CST 2018]; root of context hierarchy
+2018-05-12 21:13:35.040  INFO 2148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9496d901] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:13:35.425  INFO 2148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:13:35.806  INFO 2148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:13:35.864  INFO 2148 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:13:35.884  INFO 2148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:13:36.033  INFO 2148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:13:36.036  INFO 2148 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:13:36.100  INFO 2148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:13:36.312  INFO 2148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:13:37.347  INFO 2148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:13:38.996  INFO 2148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:13:39.858  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7383eae2: startup date [Sat May 12 21:13:32 CST 2018]; root of context hierarchy
+2018-05-12 21:13:39.969  WARN 2148 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:13:40.099  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:13:40.102  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:13:40.104  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:13:40.112  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:13:40.126  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:13:40.128  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:13:40.128  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:13:40.132  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:13:40.133  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:13:40.134  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:13:40.135  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:13:40.136  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:13:40.142  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:13:40.532  INFO 2148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:13:40.614  INFO 2148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:13:40.616  INFO 2148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:13:40.997  INFO 2148 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:13:41.584  INFO 2148 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 10.906 seconds (JVM running for 13.92)
+2018-05-12 21:15:35.856  WARN 2148 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m41s641ms86µs840ns).
+2018-05-12 21:17:12.509  INFO 1968 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 1968 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:17:12.526 DEBUG 1968 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:17:12.529  INFO 1968 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:17:12.647  INFO 1968 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5049d8b2: startup date [Sat May 12 21:17:12 CST 2018]; root of context hierarchy
+2018-05-12 21:17:16.142  INFO 1968 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27198f60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:17:16.571  INFO 1968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:17:16.963  INFO 1968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:17:17.020  INFO 1968 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:17:17.042  INFO 1968 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:17:17.201  INFO 1968 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:17:17.205  INFO 1968 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:17:17.282  INFO 1968 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:17:17.538  INFO 1968 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:17:18.559  INFO 1968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:17:20.042  INFO 1968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:17:20.855  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5049d8b2: startup date [Sat May 12 21:17:12 CST 2018]; root of context hierarchy
+2018-05-12 21:17:20.977  WARN 1968 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:17:21.057  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:17:21.059  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:17:21.062  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:17:21.067  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:17:21.076  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:17:21.077  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:17:21.078  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:17:21.080  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:17:21.080  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:17:21.081  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:17:21.081  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:17:21.082  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:17:21.086  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:17:21.087  INFO 1968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:17:21.162  INFO 1968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:17:21.163  INFO 1968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:17:21.442  INFO 1968 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:17:21.981  INFO 1968 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 10.663 seconds (JVM running for 13.666)
+2018-05-12 21:17:51.728  INFO 1968 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5049d8b2: startup date [Sat May 12 21:17:12 CST 2018]; root of context hierarchy
+2018-05-12 21:17:51.735  INFO 1968 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:17:51.736  INFO 1968 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:17:51.747  INFO 1968 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:18:02.148  WARN 2148 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m44s598ms293µs233ns).
+2018-05-12 21:18:03.283  INFO 2148 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7383eae2: startup date [Sat May 12 21:13:32 CST 2018]; root of context hierarchy
+2018-05-12 21:18:03.287  INFO 2148 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:18:03.290  INFO 2148 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:18:03.301  INFO 2148 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:23:21.603  INFO 4412 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 4412 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:23:21.614 DEBUG 4412 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:23:21.619  INFO 4412 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:23:21.793  INFO 4412 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@56ace400: startup date [Sat May 12 21:23:21 CST 2018]; root of context hierarchy
+2018-05-12 21:23:24.516  INFO 4412 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a27bb817] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:23:24.994  INFO 4412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:23:25.427  INFO 4412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:23:25.495  INFO 4412 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:23:25.519  INFO 4412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:23:25.691  INFO 4412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:23:25.695  INFO 4412 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:23:25.769  INFO 4412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:23:26.017  INFO 4412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:23:27.154  INFO 4412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:23:28.560  INFO 4412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:23:29.266  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@56ace400: startup date [Sat May 12 21:23:21 CST 2018]; root of context hierarchy
+2018-05-12 21:23:29.379  WARN 4412 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:23:29.475  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:23:29.482  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:23:29.483  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:23:29.488  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:23:29.500  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:23:29.501  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:23:29.502  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:23:29.504  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:23:29.505  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:23:29.505  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:23:29.506  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:23:29.506  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:23:29.510  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:23:29.511  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:23:29.586  INFO 4412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:23:29.587  INFO 4412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:23:29.934  INFO 4412 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:23:30.554  INFO 4412 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 10.597 seconds (JVM running for 13.448)
+2018-05-12 21:23:37.515  INFO 4412 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@56ace400: startup date [Sat May 12 21:23:21 CST 2018]; root of context hierarchy
+2018-05-12 21:23:37.519  INFO 4412 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:23:37.521  INFO 4412 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:23:37.530  INFO 4412 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:23:57.886  INFO 10032 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 10032 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:23:57.893 DEBUG 10032 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:23:57.902  INFO 10032 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:23:58.033  INFO 10032 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6722db6e: startup date [Sat May 12 21:23:58 CST 2018]; root of context hierarchy
+2018-05-12 21:24:00.665  INFO 10032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$920009b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:24:01.070  INFO 10032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:24:01.479  INFO 10032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:24:01.550  INFO 10032 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:24:01.573  INFO 10032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:24:01.740  INFO 10032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:24:01.743  INFO 10032 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:24:01.809  INFO 10032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:24:02.048  INFO 10032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:24:03.034  INFO 10032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:24:04.295  INFO 10032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:24:04.949  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6722db6e: startup date [Sat May 12 21:23:58 CST 2018]; root of context hierarchy
+2018-05-12 21:24:05.058  WARN 10032 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:24:05.147  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:24:05.149  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:24:05.151  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:24:05.155  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:24:05.173  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:24:05.176  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:24:05.177  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:24:05.179  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:24:05.180  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:24:05.181  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:24:05.182  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:24:05.183  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:24:05.188  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:24:05.189  INFO 10032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:24:05.263  INFO 10032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:24:05.265  INFO 10032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:24:05.563  INFO 10032 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:24:06.102  INFO 10032 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 9.883 seconds (JVM running for 12.543)
+2018-05-12 21:24:11.779  INFO 10032 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6722db6e: startup date [Sat May 12 21:23:58 CST 2018]; root of context hierarchy
+2018-05-12 21:24:11.785  INFO 10032 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:24:11.788  INFO 10032 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:24:11.801  INFO 10032 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:24:32.745  INFO 3348 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 3348 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:24:32.748 DEBUG 3348 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:24:32.751  INFO 3348 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:24:32.854  INFO 3348 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6d0b5baf: startup date [Sat May 12 21:24:32 CST 2018]; root of context hierarchy
+2018-05-12 21:24:36.341  INFO 3348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4252329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:24:36.704  INFO 3348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:24:37.077  INFO 3348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:24:37.139  INFO 3348 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:24:37.159  INFO 3348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:24:37.306  INFO 3348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:24:37.309  INFO 3348 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:24:37.373  INFO 3348 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:24:37.597  INFO 3348 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:24:38.622  INFO 3348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:24:39.987  INFO 3348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:24:40.757  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6d0b5baf: startup date [Sat May 12 21:24:32 CST 2018]; root of context hierarchy
+2018-05-12 21:24:40.869  WARN 3348 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:24:40.962  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:24:40.967  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:24:40.970  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:24:40.976  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:24:40.990  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:24:40.990  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:24:40.991  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:24:40.992  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:24:40.994  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:24:40.995  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:24:40.995  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:24:40.996  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:24:41.000  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:24:41.002  INFO 3348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:24:41.067  INFO 3348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:24:41.069  INFO 3348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:24:41.326  INFO 3348 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:24:41.969  INFO 3348 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 10.553 seconds (JVM running for 13.177)
+2018-05-12 21:25:42.633  WARN 3348 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s454ms542µs966ns).
+2018-05-12 21:25:48.978  INFO 3348 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6d0b5baf: startup date [Sat May 12 21:24:32 CST 2018]; root of context hierarchy
+2018-05-12 21:25:48.984  INFO 3348 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:25:48.986  INFO 3348 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:25:48.999  INFO 3348 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:26:13.112  INFO 12032 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 12032 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:26:13.115 DEBUG 12032 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:26:13.118  INFO 12032 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:26:13.266  INFO 12032 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:26:13 CST 2018]; root of context hierarchy
+2018-05-12 21:26:16.150  INFO 12032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e2c80ede] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:26:16.465  INFO 12032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:26:16.729  INFO 12032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:26:16.906  INFO 12032 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:26:16.933  INFO 12032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:26:17.029  INFO 12032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:26:17.031  INFO 12032 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:26:17.087  INFO 12032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:26:17.275  INFO 12032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:26:18.105  INFO 12032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:26:19.126  INFO 12032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:26:19.608  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:26:13 CST 2018]; root of context hierarchy
+2018-05-12 21:26:19.688  WARN 12032 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:26:19.755  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:26:19.758  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:26:19.759  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:26:19.765  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:26:19.777  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:26:19.779  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:26:19.780  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:26:19.782  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:26:19.783  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:26:19.783  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:26:19.784  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:26:19.784  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:26:19.789  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:26:19.791  INFO 12032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:26:19.850  INFO 12032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:26:19.851  INFO 12032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:26:20.112  INFO 12032 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:26:20.525  INFO 12032 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 8.405 seconds (JVM running for 10.49)
+2018-05-12 21:26:21.746  INFO 12032 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:26:13 CST 2018]; root of context hierarchy
+2018-05-12 21:26:21.753  INFO 12032 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:26:21.754  INFO 12032 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:26:21.761  INFO 12032 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:28:56.447  INFO 3832 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 3832 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:28:56.451 DEBUG 3832 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:28:56.455  INFO 3832 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:28:56.581  INFO 3832 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:28:56 CST 2018]; root of context hierarchy
+2018-05-12 21:28:59.693  INFO 3832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$572a4fb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:29:00.047  INFO 3832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:29:00.342  INFO 3832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:29:00.517  INFO 3832 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:29:00.538  INFO 3832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:29:00.636  INFO 3832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:29:00.638  INFO 3832 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:29:00.686  INFO 3832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:29:00.863  INFO 3832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:29:01.727  INFO 3832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:29:02.779  INFO 3832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:29:03.329  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:28:56 CST 2018]; root of context hierarchy
+2018-05-12 21:29:03.415  WARN 3832 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:29:03.484  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:29:03.487  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:29:03.488  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:29:03.493  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:29:03.503  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:29:03.503  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:29:03.504  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:29:03.506  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:29:03.509  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:29:03.509  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:29:03.510  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:29:03.511  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:29:03.516  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:29:03.518  INFO 3832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:29:03.607  INFO 3832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:29:03.609  INFO 3832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:29:03.885  INFO 3832 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:29:04.394  INFO 3832 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 8.883 seconds (JVM running for 11.024)
+2018-05-12 21:29:05.834  INFO 3832 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b09fb41: startup date [Sat May 12 21:28:56 CST 2018]; root of context hierarchy
+2018-05-12 21:29:05.840  INFO 3832 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:29:05.841  INFO 3832 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:29:05.849  INFO 3832 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:41:01.900  INFO 5396 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 5396 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:41:01.958 DEBUG 5396 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:41:01.962  INFO 5396 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:41:02.361  INFO 5396 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4648ce9: startup date [Sat May 12 21:41:02 CST 2018]; root of context hierarchy
+2018-05-12 21:41:08.222  INFO 5396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8917e33f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:41:08.845  INFO 5396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:41:09.555  INFO 5396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:41:09.693  INFO 5396 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:41:09.863  INFO 5396 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:41:10.184  INFO 5396 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:41:10.188  INFO 5396 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:41:10.393  INFO 5396 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:41:10.852  INFO 5396 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:41:13.103  INFO 5396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:41:14.932  INFO 5396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:41:15.710  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4648ce9: startup date [Sat May 12 21:41:02 CST 2018]; root of context hierarchy
+2018-05-12 21:41:15.833  WARN 5396 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:41:15.956  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:41:15.960  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:41:15.962  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:41:15.968  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:41:15.979  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:41:15.980  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:41:15.981  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:41:15.983  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:41:15.983  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:41:15.983  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:41:15.984  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:41:15.985  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:41:15.988  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:41:15.989  INFO 5396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:41:16.046  INFO 5396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:41:16.047  INFO 5396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:41:16.412  INFO 5396 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:41:16.958  INFO 5396 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 17.688 seconds (JVM running for 21.597)
+2018-05-12 21:41:23.214  INFO 5396 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4648ce9: startup date [Sat May 12 21:41:02 CST 2018]; root of context hierarchy
+2018-05-12 21:41:23.221  INFO 5396 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:41:23.223  INFO 5396 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:41:23.233  INFO 5396 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:45:05.068  INFO 11744 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 11744 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:45:05.070 DEBUG 11744 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:45:05.072  INFO 11744 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:45:05.148  INFO 11744 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:45:05 CST 2018]; root of context hierarchy
+2018-05-12 21:45:08.262  INFO 11744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$edbf20a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:45:08.601  INFO 11744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:45:08.865  INFO 11744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:45:09.021  INFO 11744 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:45:09.050  INFO 11744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:45:09.153  INFO 11744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:45:09.154  INFO 11744 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:45:09.202  INFO 11744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:45:09.372  INFO 11744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:45:10.236  INFO 11744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:45:11.263  INFO 11744 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:45:11.699  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:45:05 CST 2018]; root of context hierarchy
+2018-05-12 21:45:11.792  WARN 11744 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:45:11.862  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:45:11.865  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:45:11.865  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:45:11.870  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:45:11.883  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:45:11.884  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:45:11.884  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:45:11.886  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:45:11.886  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:45:11.888  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:45:11.888  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:45:11.889  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:45:11.891  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:45:11.892  INFO 11744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:45:12.003  INFO 11744 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:45:12.004  INFO 11744 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:45:12.251  INFO 11744 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:45:12.652  INFO 11744 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 8.792 seconds (JVM running for 10.675)
+2018-05-12 21:45:14.916  INFO 11744 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:45:05 CST 2018]; root of context hierarchy
+2018-05-12 21:45:14.922  INFO 11744 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:45:14.923  INFO 11744 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:45:14.934  INFO 11744 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:45:38.739  INFO 11492 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 11492 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:45:38.742 DEBUG 11492 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:45:38.744  INFO 11492 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:45:38.863  INFO 11492 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:45:38 CST 2018]; root of context hierarchy
+2018-05-12 21:45:41.910  INFO 11492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bb7d427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:45:42.223  INFO 11492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:45:42.465  INFO 11492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:45:42.632  INFO 11492 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:45:42.654  INFO 11492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:45:42.756  INFO 11492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:45:42.759  INFO 11492 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:45:42.810  INFO 11492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:45:42.973  INFO 11492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:45:43.978  INFO 11492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:45:45.133  INFO 11492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:45:45.679  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:45:38 CST 2018]; root of context hierarchy
+2018-05-12 21:45:45.749  WARN 11492 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:45:45.814  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:45:45.816  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:45:45.817  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:45:45.823  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:45:45.839  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:45:45.840  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:45:45.841  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:45:45.844  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:45:45.845  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:45:45.846  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:45:45.847  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:45:45.847  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:45:45.850  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:45:45.851  INFO 11492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:45:45.911  INFO 11492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:45:45.913  INFO 11492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:45:46.163  INFO 11492 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:45:46.616  INFO 11492 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 8.893 seconds (JVM running for 10.832)
+2018-05-12 21:46:48.240  INFO 11492 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:45:38 CST 2018]; root of context hierarchy
+2018-05-12 21:46:48.248  INFO 11492 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:46:48.250  INFO 11492 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:46:48.258  INFO 11492 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:47:40.964  INFO 12112 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 12112 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:47:40.967 DEBUG 12112 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:47:40.970  INFO 12112 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:47:41.074  INFO 12112 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:47:41 CST 2018]; root of context hierarchy
+2018-05-12 21:47:44.216  INFO 12112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7763675f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:47:44.552  INFO 12112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:47:44.821  INFO 12112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:47:44.983  INFO 12112 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:47:45.023  INFO 12112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:47:45.283  INFO 12112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:47:45.287  INFO 12112 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:47:45.366  INFO 12112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:47:45.565  INFO 12112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:47:46.697  INFO 12112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:47:47.714  INFO 12112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:47:48.198  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:47:41 CST 2018]; root of context hierarchy
+2018-05-12 21:47:48.275  WARN 12112 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:47:48.338  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:47:48.342  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:47:48.343  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:47:48.347  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:47:48.361  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:47:48.362  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:47:48.362  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:47:48.365  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:47:48.365  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:47:48.366  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:47:48.367  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:47:48.367  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:47:48.371  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:47:48.373  INFO 12112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:47:48.434  INFO 12112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:47:48.435  INFO 12112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:47:48.694  INFO 12112 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:47:49.068  INFO 12112 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 9.068 seconds (JVM running for 11.14)
+2018-05-12 21:48:24.755  INFO 12112 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:47:41 CST 2018]; root of context hierarchy
+2018-05-12 21:48:24.762  INFO 12112 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:48:24.763  INFO 12112 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:48:24.829  INFO 12112 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:51:11.681  INFO 8340 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 8340 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:51:11.684 DEBUG 8340 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:51:11.687  INFO 8340 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:51:11.780  INFO 8340 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:51:11 CST 2018]; root of context hierarchy
+2018-05-12 21:51:15.276  INFO 8340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a150a90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:51:15.730  INFO 8340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:51:16.026  INFO 8340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:51:16.087  INFO 8340 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:51:16.111  INFO 8340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:51:16.410  INFO 8340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:51:16.412  INFO 8340 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:51:16.471  INFO 8340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:51:16.697  INFO 8340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:51:17.930  INFO 8340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:51:19.185  INFO 8340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:51:19.756  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:51:11 CST 2018]; root of context hierarchy
+2018-05-12 21:51:19.842  WARN 8340 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:51:19.910  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:51:19.914  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:51:19.914  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:51:19.920  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:51:19.931  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:51:19.932  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:51:19.932  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:51:19.934  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:51:19.935  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:51:19.936  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:51:19.936  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:51:19.937  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:51:19.944  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:51:19.945  INFO 8340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:51:20.038  INFO 8340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:51:20.042  INFO 8340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:51:20.305  INFO 8340 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:51:20.729  INFO 8340 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 9.985 seconds (JVM running for 12.195)
+2018-05-12 21:52:22.135  INFO 8340 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 21:51:11 CST 2018]; root of context hierarchy
+2018-05-12 21:52:22.143  INFO 8340 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:52:22.144  INFO 8340 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:52:22.156  INFO 8340 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 21:54:58.197  INFO 11612 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 11612 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 21:54:58.200 DEBUG 11612 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 21:54:58.204  INFO 11612 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 21:54:58.334  INFO 11612 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@61526469: startup date [Sat May 12 21:54:58 CST 2018]; root of context hierarchy
+2018-05-12 21:55:01.633  INFO 11612 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eddb3723] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 21:55:02.281  INFO 11612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 21:55:02.841  INFO 11612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 21:55:02.970  INFO 11612 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:55:03.047  INFO 11612 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 21:55:03.203  INFO 11612 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 21:55:03.208  INFO 11612 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 21:55:03.278  INFO 11612 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 21:55:03.643  INFO 11612 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 21:55:04.727  INFO 11612 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:55:05.946  INFO 11612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:55:06.630  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@61526469: startup date [Sat May 12 21:54:58 CST 2018]; root of context hierarchy
+2018-05-12 21:55:06.741  WARN 11612 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 21:55:06.817  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 21:55:06.819  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 21:55:06.821  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 21:55:06.828  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 21:55:06.842  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 21:55:06.844  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 21:55:06.846  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 21:55:06.849  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 21:55:06.850  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 21:55:06.851  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 21:55:06.851  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 21:55:06.852  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 21:55:06.857  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 21:55:06.859  INFO 11612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 21:55:06.939  INFO 11612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:55:06.940  INFO 11612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 21:55:07.239  INFO 11612 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 21:55:07.773  INFO 11612 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 11.149 seconds (JVM running for 13.747)
+2018-05-12 21:56:01.023  INFO 11612 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@61526469: startup date [Sat May 12 21:54:58 CST 2018]; root of context hierarchy
+2018-05-12 21:56:01.027  INFO 11612 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 21:56:01.029  INFO 11612 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 21:56:01.037  INFO 11612 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 22:30:37.852  INFO 9348 --- [main] c.e.demo.Controller.MailTestController   : Starting MailTestController on 麦克白 with PID 9348 (started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 22:30:37.855 DEBUG 9348 --- [main] c.e.demo.Controller.MailTestController   : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 22:30:37.858  INFO 9348 --- [main] c.e.demo.Controller.MailTestController   : The following profiles are active: qq
+2018-05-12 22:30:37.946  INFO 9348 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 22:30:37 CST 2018]; root of context hierarchy
+2018-05-12 22:30:40.577  INFO 9348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49abe741] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 22:30:40.985  INFO 9348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 22:30:41.321  INFO 9348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 22:30:41.657  INFO 9348 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 22:30:41.685  INFO 9348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 22:30:41.825  INFO 9348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 22:30:41.828  INFO 9348 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 22:30:41.902  INFO 9348 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 22:30:42.085  INFO 9348 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 22:30:42.887  INFO 9348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 22:30:43.939  INFO 9348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 22:30:44.423  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 22:30:37 CST 2018]; root of context hierarchy
+2018-05-12 22:30:44.491  WARN 9348 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 22:30:44.558  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 22:30:44.561  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 22:30:44.562  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 22:30:44.566  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 22:30:44.576  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 22:30:44.578  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 22:30:44.579  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 22:30:44.582  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 22:30:44.582  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 22:30:44.583  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 22:30:44.583  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 22:30:44.584  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 22:30:44.588  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 22:30:44.589  INFO 9348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 22:30:44.642  INFO 9348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 22:30:44.643  INFO 9348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 22:30:44.863  INFO 9348 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 22:30:45.271  INFO 9348 --- [main] c.e.demo.Controller.MailTestController   : Started MailTestController in 8.469 seconds (JVM running for 10.988)
+2018-05-12 22:30:46.590  INFO 9348 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4b520ea8: startup date [Sat May 12 22:30:37 CST 2018]; root of context hierarchy
+2018-05-12 22:30:46.596  INFO 9348 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 22:30:46.597  INFO 9348 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-12 22:30:46.604  INFO 9348 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-12 22:33:45.419  INFO 11836 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on 麦克白 with PID 11836 (C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo\target\classes started by lenovo in C:\Users\lenovo\Desktop\F2FPay_Demo_Java\demoo)
+2018-05-12 22:33:45.424 DEBUG 11836 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-05-12 22:33:45.426  INFO 11836 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2018-05-12 22:33:45.519  INFO 11836 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ae50ce6: startup date [Sat May 12 22:33:45 CST 2018]; root of context hierarchy
+2018-05-12 22:33:47.109  INFO 11836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da37ab69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-12 22:33:47.426  INFO 11836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2018-05-12 22:33:47.457  INFO 11836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-12 22:33:47.458  INFO 11836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-12 22:33:47.471  INFO 11836 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2018-05-12 22:33:47.472  INFO 11836 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-05-12 22:33:47.472  INFO 11836 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-05-12 22:33:48.525  INFO 11836 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2018-05-12 22:33:48.739  INFO 11836 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-12 22:33:48.740  INFO 11836 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3221 ms
+2018-05-12 22:33:48.893  INFO 11836 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-12 22:33:48.899  INFO 11836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-12 22:33:48.901  INFO 11836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-12 22:33:48.901  INFO 11836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-12 22:33:48.901  INFO 11836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-12 22:33:49.088  INFO 11836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-12 22:33:49.274  INFO 11836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-12 22:33:49.321  INFO 11836 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-12 22:33:49.334  INFO 11836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-12 22:33:49.552  INFO 11836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-12 22:33:49.555  INFO 11836 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-12 22:33:49.593  INFO 11836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-12 22:33:49.697  INFO 11836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-12 22:33:50.114  INFO 11836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-12 22:33:50.508  INFO 11836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 22:33:50.783  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ae50ce6: startup date [Sat May 12 22:33:45 CST 2018]; root of context hierarchy
+2018-05-12 22:33:50.813  WARN 11836 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-12 22:33:50.861  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.showsthAll()
+2018-05-12 22:33:50.865  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public java.lang.String com.example.demo.Controller.controller.goUpload()
+2018-05-12 22:33:50.868  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/testupload],methods=[POST]}" onto public java.lang.String com.example.demo.Controller.controller.uploadSth(org.springframework.web.multipart.MultipartFile)
+2018-05-12 22:33:50.871  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log],methods=[GET]}" onto public java.lang.Object com.example.demo.Controller.logController.index()
+2018-05-12 22:33:50.876  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showsthAll()
+2018-05-12 22:33:50.878  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/showsths],methods=[POST]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.sthAdd(java.lang.String,java.lang.Integer)
+2018-05-12 22:33:50.878  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/age/{age}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByAge(java.lang.Integer)
+2018-05-12 22:33:50.879  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/name/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByName(java.lang.String)
+2018-05-12 22:33:50.879  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showById(java.lang.Integer)
+2018-05-12 22:33:50.880  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[DELETE]}" onto public void com.example.demo.Controller.ShowController.sthDelete(java.lang.Integer)
+2018-05-12 22:33:50.881  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}],methods=[PUT]}" onto public com.example.demo.Model.Showsth com.example.demo.Controller.ShowController.updateById(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-05-12 22:33:50.881  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/show/{id}/{name}],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Showsth> com.example.demo.Controller.ShowController.showByIdAndName(java.lang.Integer,java.lang.String)
+2018-05-12 22:33:50.884  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 22:33:50.885  INFO 11836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 22:33:50.920  INFO 11836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 22:33:50.920  INFO 11836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 22:33:51.026  INFO 11836 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-12 22:33:51.264  INFO 11836 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-12 22:33:51.266  INFO 11836 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-12 22:33:51.272  INFO 11836 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-12 22:33:51.325  INFO 11836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2018-05-12 22:33:51.328  INFO 11836 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.68 seconds (JVM running for 7.883)
+2018-05-12 22:33:54.422  INFO 11836 --- [http-nio-8100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-12 22:33:54.423  INFO 11836 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-12 22:33:54.443  INFO 11836 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-05-12 22:33:55.413  INFO 11836 --- [http-nio-8100-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory

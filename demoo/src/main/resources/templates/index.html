@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据展示</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 20px;
+        }
+        #table {
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        #table .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form class="form-inline">
+    <div class="form-group">
+        <label for="id">id</label>
+        <input type="text" class="form-control" id="id">
+    </div>
+    <div class="form-group">
+        <label for="name">名字</label>
+        <input type="text" class="form-control" id="name">
+    </div>
+    <button type="submit" class="btn btn-default">查询</button>
+    <button type="button" class="btn btn-default" onclick="openModal('add')">新增</button>
+</form>
+<table id="table" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th class="center">id</th>
+            <th class="center">名字</th>
+            <th class="center">年龄</th>
+            <th style="width: 150px">操作</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<div id="detailModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+            <form class="detailForm">
+                <div class="form-group">
+                    <label for="detailName">名字</label>
+                    <input type="text" class="form-control" id="detailName">
+                </div>
+                <div class="form-group">
+                    <label for="detailAge">年龄</label>
+                    <input type="text" class="form-control" id="detailAge">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-success save-btn" onclick="saveItem()">保存</button>
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var tableData = []
+    var curIndex = 0
+    $(function () {
+        findAll()
+    })
+    function findAll() {
+         $.ajax({
+             type: "GET",
+             url: "/showsths",
+             success: function(data){
+                    showSth(data)
+             }
+         })
+    }
+    function showSth(data) {
+        var $table = $("#table");
+        var $tbody = $table.find('tbody');
+        var html = '';
+        tableData = data
+        $.each(tableData, function (index,item){
+            html += '\
+                <tr>\
+                    <td class="center">' + item.id + '</td>\
+                    <td class="center">' + item.name + '</td>\
+                    <td class="center">' + item.age + '</td>\
+                    <td>\
+                        <button class="btn btn-xs btn-default" onclick="openModal(\'view\', ' + index + ')">查看</button>\
+                        <button class="btn btn-xs btn-primary" onclick="openModal(\'edit\', ' + index + ')">编辑</button>\
+                        <button class="btn btn-xs btn-danger" onclick="deleteItem(' + index + ')">删除</button>\
+                    </td>\
+                </tr>\
+            ';
+        });
+        
+        $tbody.html(html);
+    }
+
+    // 查询操作
+    $("form").submit(function(e) {
+        e.preventDefault();
+        var id = $('#id').val();
+        var name = $('#name').val();
+        var url ;
+
+        if (id == "" && name ==""){
+            findAll()
+        }
+        else if (name!=""&&id==""){
+            url = "/show/name/"+name
+        }
+        else if(id!=""&&name==""){
+            url = "/show/"+id
+        }
+        else{
+            url = "/show/"+id+"/"+name
+        }
+
+        // 拿 url 去查询
+        $.ajax({
+            type: "GET",
+            url: url,
+            success: function (data) {
+                showSth(data)
+            }
+        })
+    });
+
+    function openModal (type, index) {
+        curIndex = index
+        var obj = typeof index === 'number' ? tableData[index] : {
+            name: '',
+            age: ''
+        }
+        var $modal = $('#detailModal')
+        var $title = $modal.find('.modal-title')
+        var $name = $modal.find('#detailName')
+        var $age = $modal.find('#detailAge')
+        var $btn = $modal.find('.save-btn')
+        $name.val(obj.name)
+        $age.val(obj.age)
+        if (type === 'view') {
+            $title.text('查看')
+            $name.prop('disabled', true)
+            $age.prop('disabled', true)
+            $btn.hide()
+        } else if (type === 'edit') {
+            $title.text('编辑')
+            $name.prop('disabled', false)
+            $age.prop('disabled', false)
+            $btn.show()
+        } else {
+            $title.text('新增')
+            $name.prop('disabled', false)
+            $age.prop('disabled', false)
+            $btn.show()
+        }
+        $modal.modal('toggle')
+    }
+
+    function deleteItem (index) {
+        var id = tableData[index].id
+        var url = "/show/"+id;
+       // 拿id去删除
+        // 随便写的请求
+         $.ajax({
+             url: url,
+             type: 'DELETE',
+             success: function () {
+                 findAll()
+             }
+         })
+    }
+
+    function saveItem () {
+        var name = $('#detailName').val();
+        var age = $('#detailAge').val();
+        var id;
+        var url;
+        if (typeof curIndex === 'number') {
+            // 编辑
+            id = tableData[curIndex].id
+            url = "/show/"+id;
+            $.ajax({
+                url: url,
+                type: 'PUT',
+                data: {
+                    age: age,
+                    name: name
+                },
+                success: function () {
+                    findAll()
+                }
+            })
+        } else {
+            $.ajax({
+                url: '/showsths',
+                type: 'POST',
+                data: {
+                    name: name,
+                    age: age
+                },
+                success: function () {
+                    findAll()
+                }
+            })
+        }
+    }
+</script>
+</body>
+</html>
